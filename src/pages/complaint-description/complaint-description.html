@@ -1,0 +1,44 @@
+<!--
+  Generated template for the ComplaintDescriptionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Descripción</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="buttons-components-page">
+    <ion-card>
+      <ion-card-content class="thumbnails">
+        <img src="https://www.ecuavisa.com/sites/default/files/fotos/2015/07/29/28-07-2015-auto-mal-estacionado.jpg" />
+      </ion-card-content>
+      <ion-item>
+          <ion-label>Tipo de denuncia</ion-label>
+      </ion-item>
+          <ion-item>
+          <ion-select class="long" placeholder="Seleccione tipo de denuncia">
+            <ion-option value="1">Mal estacionado</ion-option>
+            <ion-option value="2">Obstrucción de la vía</ion-option>
+            <ion-option value="3">Contra vía</ion-option>
+            <ion-option value="4">Otros</ion-option>
+    
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Descripción Breve</ion-label>
+        </ion-item> 
+      <ion-item>
+          <ion-textarea #msgInput rows="5" maxLength="140" ></ion-textarea>
+      </ion-item>  
+      <ion-item>
+         <button ion-button clear item-end>Enviar</button>
+      </ion-item>
+    </ion-card>
+  
+    
+  </ion-content>
